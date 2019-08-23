@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'search',
     'tags',
     'carts',
+    'orders',
+    'accounts',
+    'billing',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +57,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+LOGOUT_REDIRECT_URL = '/login/'
 ROOT_URLCONF = 'lsw_project.urls'
 
 TEMPLATES = [
